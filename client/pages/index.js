@@ -4,8 +4,20 @@ import SignUpForm from '../Components/AccountComponents/SignUp'
 import ListProducts from '../Components/ProductComponents/showProductList'
 import HeroHeader from '../Components/StrapiComponents/HeroHeader'
 import getHeroHeaders from '../apiCalls/StrapiFunctions/GetHeroHeaders'
+import Navbar from '../Components/ThemeComponents/nav'
+// import Producthero from '../Components/StrapiComponents/ProductHero'
 
+<<<<<<< HEAD
 export default function Home() {
+=======
+export default
+
+  function Home() {
+  // useEffect(async () => {
+  //   let {data} = await getHeroHeaders()
+  //   console.log(data)
+  // }, [])
+>>>>>>> origin/gh-pages
   return (
     <div className={styles.container}>
       <Head>
@@ -14,14 +26,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      {/* <SignUpForm/> */}
+        {/* <SignUpForm/> */}
+        <Navbar />
+        {/* <Producthero /> */}
         <HeroHeader />
-        <HeroHeader variant='rightAlign'/>
+        <HeroHeader variant='rightAlign' />
         <HeroHeader />
       </main>
-      <ListProducts/>
+      <ListProducts />
       <footer className={styles.footer}>
-        
+
       </footer>
     </div>
   )
