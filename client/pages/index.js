@@ -6,10 +6,6 @@ import HeroHeader from '../Components/StrapiComponents/HeroHeader'
 import getHeroHeaders from '../apiCalls/StrapiFunctions/GetHeroHeaders'
 
 export default function Home() {
-  useEffect(async () => {
-    let {data} = await getHeroHeaders()
-    console.log(data)
-  }, [])
   return (
     <div className={styles.container}>
       <Head>
@@ -29,4 +25,5 @@ export default function Home() {
       </footer>
     </div>
   )
+
 }
